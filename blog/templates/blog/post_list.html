@@ -6,6 +6,7 @@
               {{ post.published_date }}
           </div>
           <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+          <img src="" alt="" />
           <p>{{ post.text|linebreaks }}</p>
       </div>
   {% endfor %}
